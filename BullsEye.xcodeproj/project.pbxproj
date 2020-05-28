@@ -13,10 +13,14 @@
 		554B57CE247CE00100E2D48E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554B57CC247CE00100E2D48E /* Main.storyboard */; };
 		554B57D0247CE00100E2D48E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554B57CF247CE00100E2D48E /* Assets.xcassets */; };
 		554B57D3247CE00100E2D48E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554B57D1247CE00100E2D48E /* LaunchScreen.storyboard */; };
+		5567A9E9247E2B0C00DB690F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5567A9E8247E2B0C00DB690F /* AboutViewController.swift */; };
+		5567A9EB247E2E1600DB690F /* AboutAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5567A9EA247E2E1600DB690F /* AboutAuthorViewController.swift */; };
+		5567A9ED247EC19000DB690F /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 5567A9EC247EC19000DB690F /* BullsEye.html */; };
+		5567A9F0247EC90200DB690F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5567A9EF247EC90200DB690F /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		554B57C3247CE00100E2D48E /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		554B57C3247CE00100E2D48E /* Bull's Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bull's Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		554B57C6247CE00100E2D48E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		554B57C8247CE00100E2D48E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		554B57CA247CE00100E2D48E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		554B57CF247CE00100E2D48E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		554B57D2247CE00100E2D48E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		554B57D4247CE00100E2D48E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5567A9E8247E2B0C00DB690F /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		5567A9EA247E2E1600DB690F /* AboutAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorViewController.swift; sourceTree = "<group>"; };
+		5567A9EC247EC19000DB690F /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
+		5567A9EF247EC90200DB690F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5567A9F0247EC90200DB690F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,13 +51,14 @@
 			children = (
 				554B57C5247CE00100E2D48E /* BullsEye */,
 				554B57C4247CE00100E2D48E /* Products */,
+				5567A9EE247EC90100DB690F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		554B57C4247CE00100E2D48E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				554B57C3247CE00100E2D48E /* BullsEye.app */,
+				554B57C3247CE00100E2D48E /* Bull's Eye.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,11 +70,22 @@
 				554B57C8247CE00100E2D48E /* SceneDelegate.swift */,
 				554B57CA247CE00100E2D48E /* ViewController.swift */,
 				554B57CC247CE00100E2D48E /* Main.storyboard */,
+				5567A9EA247E2E1600DB690F /* AboutAuthorViewController.swift */,
+				5567A9E8247E2B0C00DB690F /* AboutViewController.swift */,
 				554B57CF247CE00100E2D48E /* Assets.xcassets */,
 				554B57D1247CE00100E2D48E /* LaunchScreen.storyboard */,
 				554B57D4247CE00100E2D48E /* Info.plist */,
+				5567A9EC247EC19000DB690F /* BullsEye.html */,
 			);
 			path = BullsEye;
+			sourceTree = "<group>";
+		};
+		5567A9EE247EC90100DB690F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5567A9EF247EC90200DB690F /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +105,7 @@
 			);
 			name = BullsEye;
 			productName = BullsEye;
-			productReference = 554B57C3247CE00100E2D48E /* BullsEye.app */;
+			productReference = 554B57C3247CE00100E2D48E /* Bull's Eye.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				554B57D3247CE00100E2D48E /* LaunchScreen.storyboard in Resources */,
+				5567A9ED247EC19000DB690F /* BullsEye.html in Resources */,
 				554B57D0247CE00100E2D48E /* Assets.xcassets in Resources */,
 				554B57CE247CE00100E2D48E /* Main.storyboard in Resources */,
 			);
@@ -140,7 +162,9 @@
 			files = (
 				554B57CB247CE00100E2D48E /* ViewController.swift in Sources */,
 				554B57C7247CE00100E2D48E /* AppDelegate.swift in Sources */,
+				5567A9E9247E2B0C00DB690F /* AboutViewController.swift in Sources */,
 				554B57C9247CE00100E2D48E /* SceneDelegate.swift in Sources */,
+				5567A9EB247E2E1600DB690F /* AboutAuthorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +317,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.ios-mobile.BullsEye";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bull's Eye";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,7 +336,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.ios-mobile.BullsEye";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bull's Eye";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
